@@ -78,25 +78,10 @@
     <ClCompile Include="Source\Component\SpriteAnimation.cpp">
       <Filter>Component</Filter>
     </ClCompile>
-    <ClCompile Include="Source\Object\Camera.cpp">
-      <Filter>Object</Filter>
-    </ClCompile>
-    <ClCompile Include="Source\Object\Field.cpp">
-      <Filter>Object</Filter>
-    </ClCompile>
     <ClCompile Include="Source\Object\Player.cpp">
       <Filter>Object</Filter>
     </ClCompile>
-    <ClCompile Include="Source\Object\Polygon2D.cpp">
-      <Filter>Object</Filter>
-    </ClCompile>
     <ClCompile Include="Source\Object\Score.cpp">
-      <Filter>Object</Filter>
-    </ClCompile>
-    <ClCompile Include="Source\Object\Shadow.cpp">
-      <Filter>Object</Filter>
-    </ClCompile>
-    <ClCompile Include="Source\Object\Sky.cpp">
       <Filter>Object</Filter>
     </ClCompile>
     <ClCompile Include="Source\Scene\GameScene.cpp">
@@ -131,6 +116,15 @@
     </ClCompile>
     <ClCompile Include="ThirdParty\imgui\backends\imgui_impl_win32.cpp">
       <Filter>ThirdParty\imgui\backends</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Object\Notelane.cpp">
+      <Filter>Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Object\Camera.cpp">
+      <Filter>Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Object\Polygon2D.cpp">
+      <Filter>Object</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -191,25 +185,10 @@
     <ClInclude Include="Source\Component\SpriteAnimation.h">
       <Filter>Component</Filter>
     </ClInclude>
-    <ClInclude Include="Source\Object\Camera.h">
-      <Filter>Object</Filter>
-    </ClInclude>
-    <ClInclude Include="Source\Object\Field.h">
-      <Filter>Object</Filter>
-    </ClInclude>
     <ClInclude Include="Source\Object\Player.h">
       <Filter>Object</Filter>
     </ClInclude>
-    <ClInclude Include="Source\Object\Polygon2D.h">
-      <Filter>Object</Filter>
-    </ClInclude>
     <ClInclude Include="Source\Object\Score.h">
-      <Filter>Object</Filter>
-    </ClInclude>
-    <ClInclude Include="Source\Object\Shadow.h">
-      <Filter>Object</Filter>
-    </ClInclude>
-    <ClInclude Include="Source\Object\Sky.h">
       <Filter>Object</Filter>
     </ClInclude>
     <ClInclude Include="Source\Scene\GameScene.h">
@@ -247,6 +226,15 @@
     </ClInclude>
     <ClInclude Include="ThirdParty\imgui\backends\imgui_impl_win32.h">
       <Filter>ThirdParty\imgui\backends</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Object\Notelane.h">
+      <Filter>Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Object\Camera.h">
+      <Filter>Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Object\Polygon2D.h">
+      <Filter>Object</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

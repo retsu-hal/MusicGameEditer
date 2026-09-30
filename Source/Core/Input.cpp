@@ -377,6 +377,9 @@ int  Input::m_OldWheelValue = 0;
 
 bool Input::m_FirstUpdate = true;
 
+std::vector<KeyEvent> Input::m_PendingKeys;
+std::vector<KeyEvent> Input::m_FrameKeys;
+
 
 //======================================================================
 // 初期化・終了・更新
@@ -408,6 +411,10 @@ void Input::Uninit()
 
 void Input::Update()
 {
+	// ためておいたキーイベントを「このフレームの分」として渡す
+	m_FrameKeys.swap(m_PendingKeys);   // 中身を丸ごと入れ替える（コピーより速い）
+	m_PendingKeys.clear();             // 入れ替えで来た古い分を空にする
+
 	//----------------------------------------
 	// キーボード
 	//----------------------------------------
@@ -548,4 +555,15 @@ bool Input::IsMouseVisible()
 bool Input::IsMouseConnected()
 {
 	return GetSystemMetrics(SM_MOUSEPRESENT) != 0;
+}
+
+void Input::OnKeyDown(WPARAM wParam, LPARAM lParam)
+{
+	// 押しっぱなしで自動的に何度も届く「キーリピート」は無視する
+	// （lParam の 30 ビット目が 1 なら「前から押されていた」という意味）
+	if (lParam & (1 << 30)) return;
+
+	LARGE_INTEGER c;
+	QueryPerformanceCounter(&c);             // ★ 押された瞬間の時刻
+	m_PendingKeys.push_back({ (BYTE)wParam, c.QuadPart });
 }

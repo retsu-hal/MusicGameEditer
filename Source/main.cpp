@@ -156,6 +156,7 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam)
         break;
 
 	case WM_KEYDOWN:
+		Input::OnKeyDown(wParam,lParam);
 		switch (wParam)
 		{
 		case VK_ESCAPE:

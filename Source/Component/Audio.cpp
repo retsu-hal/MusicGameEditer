@@ -1,6 +1,7 @@
 ﻿
 #include "main.h"
 #include "Audio.h"
+#include "Conductor.h"
 
 
 
@@ -104,6 +105,9 @@ void Audio::Load(const char *FileName)
 
 void Audio::Uninit()
 {
+	if (Conductor::GetAudio() == this)
+		Conductor::Stop();
+
 	m_SourceVoice->Stop();
 	m_SourceVoice->DestroyVoice();
 

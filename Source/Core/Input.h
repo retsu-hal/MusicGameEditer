@@ -1,6 +1,13 @@
 ﻿#pragma once
 
 #include <windows.h>
+#include <vector>
+
+struct KeyEvent
+{
+	BYTE key;
+	long long time;
+};
 
 class Input
 {
@@ -40,6 +47,9 @@ private:
 
 	static bool m_FirstUpdate;		// 初回のみ移動量を0にする
 
+	static std::vector<KeyEvent> m_PendingKeys;   // メッセージで届いた分（次のフレーム用にためておく）
+	static std::vector<KeyEvent> m_FrameKeys;     // このフレームで処理する分
+
 public:
 	static void Init();
 	static void Uninit();
@@ -71,4 +81,7 @@ public:
 	static void SetMouseVisible(bool Visible);
 	static bool IsMouseVisible();
 	static bool IsMouseConnected();
+
+	static void OnKeyDown(WPARAM wParam, LPARAM lParam);                  // WndProc から呼ぶ
+	static const std::vector<KeyEvent>& GetKeyEvents() { return m_FrameKeys; }
 };

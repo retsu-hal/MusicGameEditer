@@ -31,6 +31,13 @@ void Conductor::Start(Audio* audio, double startSec)
 	m_Playing = true;
 }
 
+void Conductor::Stop()
+{
+	if (m_Audio) m_Audio->Pause();
+	m_Audio = nullptr;
+	m_Playing = false;
+}
+
 void Conductor::Pause()
 {
 	if (!m_Audio) return;
@@ -48,6 +55,17 @@ void Conductor::ReStart()
 double Conductor::GetRawAudioTime()
 {
 	return m_Audio ? m_Audio->GetPlaybackTime() : 0.0;
+}
+
+double Conductor::CounterToSongTime(long long counter)
+{
+	if (!m_Playing) return GetSongTime();
+
+	// 最後に Update した瞬間（m_LastCounter）から、何秒ずれているか
+	// キーを押したのが Update より前ならマイナスになる
+	double sec = (counter - m_LastCounter) / (double)m_Freq;
+
+	return m_SongTime + sec - m_Offset;
 }
 
 

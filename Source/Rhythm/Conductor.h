@@ -18,6 +18,7 @@ private:
 public:
 	static void Init();
 	static void Start(Audio* audio, double startSec = 0.0);
+	static void Stop();
 	static void Pause();
 	static void ReStart();
 	static void Update();
@@ -29,4 +30,6 @@ public:
 	static void   SetBpm(double bpm) { m_Bpm = bpm; }
 	static void   SetOffset(double sec) { m_Offset = sec; }
 	static bool   IsPlaying() { return m_Playing; }
+	static Audio* GetAudio() { return m_Audio; }
+	static double CounterToSongTime(long long counter);
 };

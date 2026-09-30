@@ -79,6 +79,7 @@
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
       <AdditionalIncludeDirectories>$(ProjectDir)Source;$(ProjectDir)Source\Core;$(ProjectDir)Source\Rhythm;$(ProjectDir)Source\Component;$(ProjectDir)Source\Object;$(ProjectDir)Source\Scene;$(ProjectDir)ThirdParty;$(ProjectDir)ThirdParty\imgui;$(ProjectDir)ThirdParty\assimp\include;$(ProjectDir)ThirdParty\DirectXTex;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
+      <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -101,6 +102,7 @@
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
       <AdditionalIncludeDirectories>$(ProjectDir)Source;$(ProjectDir)Source\Core;$(ProjectDir)Source\Rhythm;$(ProjectDir)Source\Component;$(ProjectDir)Source\Object;$(ProjectDir)Source\Scene;$(ProjectDir)ThirdParty;$(ProjectDir)ThirdParty\imgui;$(ProjectDir)ThirdParty\assimp\include;$(ProjectDir)ThirdParty\DirectXTex;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
+      <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -121,6 +123,7 @@
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
       <AdditionalIncludeDirectories>$(ProjectDir)Source;$(ProjectDir)Source\Core;$(ProjectDir)Source\Rhythm;$(ProjectDir)Source\Component;$(ProjectDir)Source\Object;$(ProjectDir)Source\Scene;$(ProjectDir)ThirdParty;$(ProjectDir)ThirdParty\imgui;$(ProjectDir)ThirdParty\assimp\include;$(ProjectDir)ThirdParty\DirectXTex;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
+      <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -144,6 +147,7 @@
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
       <AdditionalIncludeDirectories>$(ProjectDir)Source;$(ProjectDir)Source\Core;$(ProjectDir)Source\Rhythm;$(ProjectDir)Source\Component;$(ProjectDir)Source\Object;$(ProjectDir)Source\Scene;$(ProjectDir)ThirdParty;$(ProjectDir)ThirdParty\imgui;$(ProjectDir)ThirdParty\assimp\include;$(ProjectDir)ThirdParty\DirectXTex;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
+      <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -156,6 +160,9 @@
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Source\Object\Camera.cpp" />
+    <ClCompile Include="Source\Object\Notelane.cpp" />
+    <ClCompile Include="Source\Object\Polygon2D.cpp" />
     <ClCompile Include="Source\Rhythm\Chart.cpp" />
     <ClCompile Include="Source\Rhythm\Conductor.cpp" />
     <ClCompile Include="Source\Core\Input.cpp" />
@@ -171,13 +178,8 @@
     <ClCompile Include="Source\Component\ModelRenderer.cpp" />
     <ClCompile Include="Source\Component\Rigidbody.cpp" />
     <ClCompile Include="Source\Component\SpriteAnimation.cpp" />
-    <ClCompile Include="Source\Object\Camera.cpp" />
-    <ClCompile Include="Source\Object\Field.cpp" />
     <ClCompile Include="Source\Object\Player.cpp" />
-    <ClCompile Include="Source\Object\Polygon2D.cpp" />
     <ClCompile Include="Source\Object\Score.cpp" />
-    <ClCompile Include="Source\Object\Shadow.cpp" />
-    <ClCompile Include="Source\Object\Sky.cpp" />
     <ClCompile Include="Source\Scene\GameScene.cpp" />
     <ClCompile Include="Source\Scene\ResultScene.cpp" />
     <ClCompile Include="Source\Scene\TitleScene.cpp" />
@@ -191,6 +193,9 @@
     <ClCompile Include="ThirdParty\imgui\backends\imgui_impl_win32.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Source\Object\Camera.h" />
+    <ClInclude Include="Source\Object\Notelane.h" />
+    <ClInclude Include="Source\Object\Polygon2D.h" />
     <ClInclude Include="Source\Rhythm\Chart.h" />
     <ClInclude Include="Source\Core\Component.h" />
     <ClInclude Include="Source\Rhythm\Conductor.h" />
@@ -210,13 +215,8 @@
     <ClInclude Include="Source\Component\ModelRenderer.h" />
     <ClInclude Include="Source\Component\Rigidbody.h" />
     <ClInclude Include="Source\Component\SpriteAnimation.h" />
-    <ClInclude Include="Source\Object\Camera.h" />
-    <ClInclude Include="Source\Object\Field.h" />
     <ClInclude Include="Source\Object\Player.h" />
-    <ClInclude Include="Source\Object\Polygon2D.h" />
     <ClInclude Include="Source\Object\Score.h" />
-    <ClInclude Include="Source\Object\Shadow.h" />
-    <ClInclude Include="Source\Object\Sky.h" />
     <ClInclude Include="Source\Scene\GameScene.h" />
     <ClInclude Include="Source\Scene\ResultScene.h" />
     <ClInclude Include="Source\Scene\TitleScene.h" />

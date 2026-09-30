@@ -6,7 +6,6 @@
 #include "AnimationModel.h"
 #include "Collider.h"
 #include "Audio.h"
-#include "Shadow.h"
 #include "Rigidbody.h"
 
 #define SHADOW_OFFSET_Y	(0.01f)		// 影を地面から浮かせる量（Zファイティング回避）
@@ -41,19 +40,10 @@ void Player::Init()
 	m_JumpSE = AddComponent<Audio>();
 	m_JumpSE->Load("asset\\audio\\wan.wav");
 
-	m_Shadow = Manager::AddGameObject<Shadow>();
-	m_Shadow->SetScale({ 1.5f, 1.5f, 1.5f });
 }
 
 void Player::Uninit()
 {
-	//影はManager管理なので、プレイヤーが消えるときに一緒に破棄する
-	if (m_Shadow)
-	{
-		m_Shadow->SetDestroy();
-		m_Shadow = nullptr;
-	}
-
 	GameObject::Uninit();
 }
 

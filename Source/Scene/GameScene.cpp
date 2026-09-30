@@ -13,10 +13,9 @@
 #include "main.h"
 #include "Manager.h"
 #include "Camera.h"
-#include "Field.h"
 #include "Player.h"
-#include "Sky.h"
 #include "Score.h"
+#include "Notelane.h"
 
 #include "GameScene.h"
 #include "ResultScene.h"
@@ -24,8 +23,6 @@
 //==============================================================================
 //マクロ宣言
 //==============================================================================
-#define ENEMY_COUNT 1
-#define TREE_COUNT 5
 //==============================================================================
 //プロトタイプ宣言
 //==============================================================================
@@ -39,17 +36,11 @@
 //==============================================================================
 void GameScene::Init()
 {
-	Manager::AddGameObject<CAMERA>();
-
-	Manager::AddGameObject<Sky>();
-
-	Manager::AddGameObject<FIELD>();
-
-	Manager::AddGameObject<Player>();
-
-	//Manager::AddGameObject<Polygon2D>();
 	Manager::AddGameObject<Score>()->SetPosition({ 0.0f, 0.0f, 0.0f });
 
+	Notelane* notelane = Manager::AddGameObject<Notelane>();
+	notelane->LoadChart("asset\\chart\\test.json"); 
+	notelane->Play();
 }
 
 //==============================================================================
