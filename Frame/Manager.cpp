@@ -31,6 +31,12 @@ void Manager::Init()
 	IMGUI_CHECKVERSION();
 	ImGui::CreateContext();
 	ImGui::StyleColorsDark();
+
+	// 日本語フォント（Windows に最初から入っているメイリオ）
+	ImGuiIO& io = ImGui::GetIO();
+	ImFont* font = io.Fonts->AddFontFromFileTTF("C:\\Windows\\Fonts\\meiryo.ttc", 18.0f);
+	IM_ASSERT(font != nullptr);   // 読み込めなかったら止める
+
 	ImGui_ImplWin32_Init(GetWindow());
 	ImGui_ImplDX11_Init(Renderer::GetDevice(), Renderer::GetDeviceContext());
 

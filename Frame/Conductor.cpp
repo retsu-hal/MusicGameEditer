@@ -38,7 +38,7 @@ void Conductor::Pause()
 	m_Playing = false;
 }
 
-void Conductor::Resume()
+void Conductor::ReStart()
 {
 	if (!m_Audio) return;
 	m_Audio->Resume();

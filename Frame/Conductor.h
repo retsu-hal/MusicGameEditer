@@ -19,7 +19,7 @@ public:
 	static void Init();
 	static void Start(Audio* audio, double startSec = 0.0);
 	static void Pause();
-	static void Resume();
+	static void ReStart();
 	static void Update();
 
 	static double GetSongTime() { return m_SongTime - m_Offset; }

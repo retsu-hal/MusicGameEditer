@@ -4,6 +4,7 @@
 #include "Component.h"
 #include "Audio.h"
 #include "Conductor.h"
+#include "Chart.h"
 
 
 
@@ -56,8 +57,21 @@ void FIELD::Init()
 
 	Conductor::SetBpm(120.0);
 	Conductor::Start(m_Bgm, 0.0);
-}
 
+	m_Chart.tempos= { {0, 120.0} ,{480, 120.0} };
+
+	// 1. 譜面を作って保存（1拍ごとに 0→1→2→3 レーンの順でノーツ、8小節）
+	Chart save;
+	save.title = "テスト譜面";
+	save.audioPath = "asset\\audio\\click120.wav";
+	save.tempos = { {0, 120.0} };
+	for (int i = 0; i < 32; i++)
+		save.notes.push_back({ i * 480, i % 4 });
+	save.Save("asset\\chart\\test.json");
+
+	// 2. 別の Chart に読み込む
+	m_Chart.Load("asset\\chart\\test.json");
+}
 void FIELD::Uninit()
 {
 	m_vertexBuffer->Release();
@@ -92,8 +106,15 @@ void FIELD::Update()
 		Conductor::SetOffset(offsetMs / 1000.0);
 
 	if (ImGui::Button("Pause"))  Conductor::Pause();
-	if (ImGui::Button("Resume")) Conductor::Resume();
+	if (ImGui::Button("ReStart")) Conductor::ReStart();
 	if (ImGui::Button("10sec"))  Conductor::Start(m_Bgm, 10.0);
+	ImGui::Separator();
+	ImGui::Text("tick 960  -> %.3f sec (2拍目 = 1.000)", m_Chart.TickToSec(960));
+	ImGui::Text("tick 1920 -> %.3f sec (4拍   = 2.000)", m_Chart.TickToSec(1920));
+	ImGui::Text("tick 3840 -> %.3f sec (+4拍@240 = 3.000)", m_Chart.TickToSec(3840));
+	ImGui::Text("2.5 sec   -> %.1f tick (= 2880)", m_Chart.SecToTick(2.5));
+	ImGui::Text("title : %s", m_Chart.title.c_str());
+	ImGui::Text("notes : %d", (int)m_Chart.notes.size());   // 32 なら OK
 	ImGui::End();
 }
 

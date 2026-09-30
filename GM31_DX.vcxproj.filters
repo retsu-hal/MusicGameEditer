@@ -70,9 +70,6 @@
     <ClCompile Include="Object\Field.cpp">
       <Filter>Object</Filter>
     </ClCompile>
-    <ClCompile Include="Object\Particle.cpp">
-      <Filter>Object</Filter>
-    </ClCompile>
     <ClCompile Include="Object\Player.cpp">
       <Filter>Object</Filter>
     </ClCompile>
@@ -119,7 +116,10 @@
       <Filter>imgui\backends</Filter>
     </ClCompile>
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="Conductor.cpp">
+    <ClCompile Include="Frame\Chart.cpp">
+      <Filter>Frame</Filter>
+    </ClCompile>
+    <ClCompile Include="Frame\Conductor.cpp">
       <Filter>Frame</Filter>
     </ClCompile>
   </ItemGroup>
@@ -170,9 +170,6 @@
       <Filter>Object</Filter>
     </ClInclude>
     <ClInclude Include="Object\Field.h">
-      <Filter>Object</Filter>
-    </ClInclude>
-    <ClInclude Include="Object\Particle.h">
       <Filter>Object</Filter>
     </ClInclude>
     <ClInclude Include="Object\Player.h">
@@ -233,7 +230,10 @@
     <ClInclude Include="Frame\GameObject.h">
       <Filter>Object</Filter>
     </ClInclude>
-    <ClInclude Include="Conductor.h">
+    <ClInclude Include="Frame\Chart.h">
+      <Filter>Frame</Filter>
+    </ClInclude>
+    <ClInclude Include="Frame\Conductor.h">
       <Filter>Frame</Filter>
     </ClInclude>
   </ItemGroup>

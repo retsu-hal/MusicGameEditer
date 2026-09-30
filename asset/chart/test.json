@@ -1,0 +1,207 @@
+{
+  "audio": "asset\\audio\\click120.wav",
+  "notes": [
+    {
+      "lane": 0,
+      "length": 0,
+      "tick": 0,
+      "type": 0
+    },
+    {
+      "lane": 1,
+      "length": 0,
+      "tick": 480,
+      "type": 0
+    },
+    {
+      "lane": 2,
+      "length": 0,
+      "tick": 960,
+      "type": 0
+    },
+    {
+      "lane": 3,
+      "length": 0,
+      "tick": 1440,
+      "type": 0
+    },
+    {
+      "lane": 0,
+      "length": 0,
+      "tick": 1920,
+      "type": 0
+    },
+    {
+      "lane": 1,
+      "length": 0,
+      "tick": 2400,
+      "type": 0
+    },
+    {
+      "lane": 2,
+      "length": 0,
+      "tick": 2880,
+      "type": 0
+    },
+    {
+      "lane": 3,
+      "length": 0,
+      "tick": 3360,
+      "type": 0
+    },
+    {
+      "lane": 0,
+      "length": 0,
+      "tick": 3840,
+      "type": 0
+    },
+    {
+      "lane": 1,
+      "length": 0,
+      "tick": 4320,
+      "type": 0
+    },
+    {
+      "lane": 2,
+      "length": 0,
+      "tick": 4800,
+      "type": 0
+    },
+    {
+      "lane": 3,
+      "length": 0,
+      "tick": 5280,
+      "type": 0
+    },
+    {
+      "lane": 0,
+      "length": 0,
+      "tick": 5760,
+      "type": 0
+    },
+    {
+      "lane": 1,
+      "length": 0,
+      "tick": 6240,
+      "type": 0
+    },
+    {
+      "lane": 2,
+      "length": 0,
+      "tick": 6720,
+      "type": 0
+    },
+    {
+      "lane": 3,
+      "length": 0,
+      "tick": 7200,
+      "type": 0
+    },
+    {
+      "lane": 0,
+      "length": 0,
+      "tick": 7680,
+      "type": 0
+    },
+    {
+      "lane": 1,
+      "length": 0,
+      "tick": 8160,
+      "type": 0
+    },
+    {
+      "lane": 2,
+      "length": 0,
+      "tick": 8640,
+      "type": 0
+    },
+    {
+      "lane": 3,
+      "length": 0,
+      "tick": 9120,
+      "type": 0
+    },
+    {
+      "lane": 0,
+      "length": 0,
+      "tick": 9600,
+      "type": 0
+    },
+    {
+      "lane": 1,
+      "length": 0,
+      "tick": 10080,
+      "type": 0
+    },
+    {
+      "lane": 2,
+      "length": 0,
+      "tick": 10560,
+      "type": 0
+    },
+    {
+      "lane": 3,
+      "length": 0,
+      "tick": 11040,
+      "type": 0
+    },
+    {
+      "lane": 0,
+      "length": 0,
+      "tick": 11520,
+      "type": 0
+    },
+    {
+      "lane": 1,
+      "length": 0,
+      "tick": 12000,
+      "type": 0
+    },
+    {
+      "lane": 2,
+      "length": 0,
+      "tick": 12480,
+      "type": 0
+    },
+    {
+      "lane": 3,
+      "length": 0,
+      "tick": 12960,
+      "type": 0
+    },
+    {
+      "lane": 0,
+      "length": 0,
+      "tick": 13440,
+      "type": 0
+    },
+    {
+      "lane": 1,
+      "length": 0,
+      "tick": 13920,
+      "type": 0
+    },
+    {
+      "lane": 2,
+      "length": 0,
+      "tick": 14400,
+      "type": 0
+    },
+    {
+      "lane": 3,
+      "length": 0,
+      "tick": 14880,
+      "type": 0
+    }
+  ],
+  "offset": 0.0,
+  "resolution": 480,
+  "tempos": [
+    {
+      "bpm": 120.0,
+      "tick": 0
+    }
+  ],
+  "title": "テスト譜面",
+  "version": 1
+}
