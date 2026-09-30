@@ -1,266 +1,278 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Frame">
-      <UniqueIdentifier>{af829ad1-fdb0-4de9-a0c6-942b77382c6f}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Component">
-      <UniqueIdentifier>{1a2b3c4d-5e6f-4a7b-8c9d-0e1f2a3b4c5d}</UniqueIdentifier>
+      <UniqueIdentifier>{288c2c12-7228-50ef-aebb-43bd18e07bc3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core">
+      <UniqueIdentifier>{cce793a7-7f8b-55c5-b621-0366a3fa684b}</UniqueIdentifier>
     </Filter>
     <Filter Include="Object">
-      <UniqueIdentifier>{34129637-c0f5-423a-8fdf-973c09107029}</UniqueIdentifier>
+      <UniqueIdentifier>{8b55107b-1e1e-567e-af2a-babb5d5ed17d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rhythm">
+      <UniqueIdentifier>{d080488d-550b-53d3-878c-294cf98e4e49}</UniqueIdentifier>
     </Filter>
     <Filter Include="Scene">
-      <UniqueIdentifier>{1a8ddf13-90f9-4bcb-8f69-e26c501622b3}</UniqueIdentifier>
+      <UniqueIdentifier>{8b3c5873-b118-5696-ba48-d3ee1507064c}</UniqueIdentifier>
     </Filter>
-    <Filter Include="imgui">
-      <UniqueIdentifier>{bd732d3a-22b5-4fb6-a9e1-381bbe962618}</UniqueIdentifier>
+    <Filter Include="Source">
+      <UniqueIdentifier>{f7c6e925-d256-5826-b9c6-32d39f2be945}</UniqueIdentifier>
     </Filter>
-    <Filter Include="imgui\backends">
-      <UniqueIdentifier>{564ee1fb-12ed-4a8b-a813-b7dbaa2e8d6b}</UniqueIdentifier>
+    <Filter Include="ThirdParty">
+      <UniqueIdentifier>{4af063b2-e03e-5191-bc30-98d6a20a4205}</UniqueIdentifier>
     </Filter>
-    <Filter Include="シェーダーファイル">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    <Filter Include="ThirdParty\imgui">
+      <UniqueIdentifier>{6a24491b-1735-59a6-ac92-aee693292a44}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ThirdParty\imgui\backends">
+      <UniqueIdentifier>{988b7fa6-9813-5f63-9e7a-bc2d59409ccc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shader">
+      <UniqueIdentifier>{8d9db4f3-cd2a-5706-89b8-165b4d38908e}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Frame\Input.cpp">
-      <Filter>Frame</Filter>
+    <ClCompile Include="Source\Rhythm\Chart.cpp">
+      <Filter>Rhythm</Filter>
     </ClCompile>
-    <ClCompile Include="Frame\Manager.cpp">
-      <Filter>Frame</Filter>
+    <ClCompile Include="Source\Rhythm\Conductor.cpp">
+      <Filter>Rhythm</Filter>
     </ClCompile>
-    <ClCompile Include="Frame\Profiler.cpp">
-      <Filter>Frame</Filter>
+    <ClCompile Include="Source\Core\Input.cpp">
+      <Filter>Core</Filter>
     </ClCompile>
-    <ClCompile Include="Frame\Renderer.cpp">
-      <Filter>Frame</Filter>
+    <ClCompile Include="Source\Core\Manager.cpp">
+      <Filter>Core</Filter>
     </ClCompile>
-    <ClCompile Include="Frame\ShaderManager.cpp">
-      <Filter>Frame</Filter>
+    <ClCompile Include="Source\Core\Profiler.cpp">
+      <Filter>Core</Filter>
     </ClCompile>
-    <ClCompile Include="Frame\TextureManager.cpp">
-      <Filter>Frame</Filter>
+    <ClCompile Include="Source\Core\Renderer.cpp">
+      <Filter>Core</Filter>
     </ClCompile>
-    <ClCompile Include="Component\AnimationModel.cpp">
+    <ClCompile Include="Source\Core\ShaderManager.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Core\TextureManager.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Component\AnimationModel.cpp">
       <Filter>Component</Filter>
     </ClCompile>
-    <ClCompile Include="Component\Audio.cpp">
+    <ClCompile Include="Source\Component\Audio.cpp">
       <Filter>Component</Filter>
     </ClCompile>
-    <ClCompile Include="Component\BillboardRenderer.cpp">
+    <ClCompile Include="Source\Component\BillboardRenderer.cpp">
       <Filter>Component</Filter>
     </ClCompile>
-    <ClCompile Include="Component\Collider.cpp">
+    <ClCompile Include="Source\Component\Collider.cpp">
       <Filter>Component</Filter>
     </ClCompile>
-    <ClCompile Include="Component\ModelRenderer.cpp">
+    <ClCompile Include="Source\Component\ModelRenderer.cpp">
       <Filter>Component</Filter>
     </ClCompile>
-    <ClCompile Include="Component\Rigidbody.cpp">
+    <ClCompile Include="Source\Component\Rigidbody.cpp">
       <Filter>Component</Filter>
     </ClCompile>
-    <ClCompile Include="Component\SpriteAnimation.cpp">
+    <ClCompile Include="Source\Component\SpriteAnimation.cpp">
       <Filter>Component</Filter>
     </ClCompile>
-    <ClCompile Include="Object\Camera.cpp">
+    <ClCompile Include="Source\Object\Camera.cpp">
       <Filter>Object</Filter>
     </ClCompile>
-    <ClCompile Include="Object\Field.cpp">
+    <ClCompile Include="Source\Object\Field.cpp">
       <Filter>Object</Filter>
     </ClCompile>
-    <ClCompile Include="Object\Player.cpp">
+    <ClCompile Include="Source\Object\Player.cpp">
       <Filter>Object</Filter>
     </ClCompile>
-    <ClCompile Include="Object\Polygon2D.cpp">
+    <ClCompile Include="Source\Object\Polygon2D.cpp">
       <Filter>Object</Filter>
     </ClCompile>
-    <ClCompile Include="Object\Score.cpp">
+    <ClCompile Include="Source\Object\Score.cpp">
       <Filter>Object</Filter>
     </ClCompile>
-    <ClCompile Include="Object\Shadow.cpp">
+    <ClCompile Include="Source\Object\Shadow.cpp">
       <Filter>Object</Filter>
     </ClCompile>
-    <ClCompile Include="Object\Sky.cpp">
+    <ClCompile Include="Source\Object\Sky.cpp">
       <Filter>Object</Filter>
     </ClCompile>
-    <ClCompile Include="Scene\GameScene.cpp">
+    <ClCompile Include="Source\Scene\GameScene.cpp">
       <Filter>Scene</Filter>
     </ClCompile>
-    <ClCompile Include="Scene\ResultScene.cpp">
+    <ClCompile Include="Source\Scene\ResultScene.cpp">
       <Filter>Scene</Filter>
     </ClCompile>
-    <ClCompile Include="Scene\TitleScene.cpp">
+    <ClCompile Include="Source\Scene\TitleScene.cpp">
       <Filter>Scene</Filter>
     </ClCompile>
-    <ClCompile Include="imgui-master\imgui-master\imgui.cpp">
-      <Filter>imgui</Filter>
+    <ClCompile Include="Source\main.cpp">
+      <Filter>Source</Filter>
     </ClCompile>
-    <ClCompile Include="imgui-master\imgui-master\imgui_demo.cpp">
-      <Filter>imgui</Filter>
+    <ClCompile Include="ThirdParty\imgui\imgui.cpp">
+      <Filter>ThirdParty\imgui</Filter>
     </ClCompile>
-    <ClCompile Include="imgui-master\imgui-master\imgui_draw.cpp">
-      <Filter>imgui</Filter>
+    <ClCompile Include="ThirdParty\imgui\imgui_demo.cpp">
+      <Filter>ThirdParty\imgui</Filter>
     </ClCompile>
-    <ClCompile Include="imgui-master\imgui-master\imgui_tables.cpp">
-      <Filter>imgui</Filter>
+    <ClCompile Include="ThirdParty\imgui\imgui_draw.cpp">
+      <Filter>ThirdParty\imgui</Filter>
     </ClCompile>
-    <ClCompile Include="imgui-master\imgui-master\imgui_widgets.cpp">
-      <Filter>imgui</Filter>
+    <ClCompile Include="ThirdParty\imgui\imgui_tables.cpp">
+      <Filter>ThirdParty\imgui</Filter>
     </ClCompile>
-    <ClCompile Include="imgui-master\imgui-master\backends\imgui_impl_dx11.cpp">
-      <Filter>imgui\backends</Filter>
+    <ClCompile Include="ThirdParty\imgui\imgui_widgets.cpp">
+      <Filter>ThirdParty\imgui</Filter>
     </ClCompile>
-    <ClCompile Include="imgui-master\imgui-master\backends\imgui_impl_win32.cpp">
-      <Filter>imgui\backends</Filter>
+    <ClCompile Include="ThirdParty\imgui\backends\imgui_impl_dx11.cpp">
+      <Filter>ThirdParty\imgui\backends</Filter>
     </ClCompile>
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="Frame\Chart.cpp">
-      <Filter>Frame</Filter>
-    </ClCompile>
-    <ClCompile Include="Frame\Conductor.cpp">
-      <Filter>Frame</Filter>
+    <ClCompile Include="ThirdParty\imgui\backends\imgui_impl_win32.cpp">
+      <Filter>ThirdParty\imgui\backends</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Frame\Input.h">
-      <Filter>Frame</Filter>
+    <ClInclude Include="Source\Rhythm\Chart.h">
+      <Filter>Rhythm</Filter>
     </ClInclude>
-    <ClInclude Include="Frame\Manager.h">
-      <Filter>Frame</Filter>
+    <ClInclude Include="Source\Core\Component.h">
+      <Filter>Core</Filter>
     </ClInclude>
-    <ClInclude Include="Frame\Profiler.h">
-      <Filter>Frame</Filter>
+    <ClInclude Include="Source\Rhythm\Conductor.h">
+      <Filter>Rhythm</Filter>
     </ClInclude>
-    <ClInclude Include="Frame\Renderer.h">
-      <Filter>Frame</Filter>
+    <ClInclude Include="Source\Core\GameObject.h">
+      <Filter>Core</Filter>
     </ClInclude>
-    <ClInclude Include="Frame\ShaderManager.h">
-      <Filter>Frame</Filter>
+    <ClInclude Include="Source\Core\Input.h">
+      <Filter>Core</Filter>
     </ClInclude>
-    <ClInclude Include="Frame\TextureManager.h">
-      <Filter>Frame</Filter>
+    <ClInclude Include="Source\Core\Manager.h">
+      <Filter>Core</Filter>
     </ClInclude>
-    <ClInclude Include="Frame\Vector3.h">
-      <Filter>Frame</Filter>
+    <ClInclude Include="Source\Core\Profiler.h">
+      <Filter>Core</Filter>
     </ClInclude>
-    <ClInclude Include="Component\AnimationModel.h">
+    <ClInclude Include="Source\Core\Renderer.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\Scene.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\ShaderManager.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\TextureManager.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\Vector3.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Component\AnimationModel.h">
       <Filter>Component</Filter>
     </ClInclude>
-    <ClInclude Include="Component\Audio.h">
+    <ClInclude Include="Source\Component\Audio.h">
       <Filter>Component</Filter>
     </ClInclude>
-    <ClInclude Include="Component\BillboardRenderer.h">
+    <ClInclude Include="Source\Component\BillboardRenderer.h">
       <Filter>Component</Filter>
     </ClInclude>
-    <ClInclude Include="Component\Collider.h">
+    <ClInclude Include="Source\Component\Collider.h">
       <Filter>Component</Filter>
     </ClInclude>
-    <ClInclude Include="Component\ModelRenderer.h">
+    <ClInclude Include="Source\Component\ModelRenderer.h">
       <Filter>Component</Filter>
     </ClInclude>
-    <ClInclude Include="Component\Rigidbody.h">
+    <ClInclude Include="Source\Component\Rigidbody.h">
       <Filter>Component</Filter>
     </ClInclude>
-    <ClInclude Include="Component\SpriteAnimation.h">
+    <ClInclude Include="Source\Component\SpriteAnimation.h">
       <Filter>Component</Filter>
     </ClInclude>
-    <ClInclude Include="Object\Camera.h">
+    <ClInclude Include="Source\Object\Camera.h">
       <Filter>Object</Filter>
     </ClInclude>
-    <ClInclude Include="Object\Field.h">
+    <ClInclude Include="Source\Object\Field.h">
       <Filter>Object</Filter>
     </ClInclude>
-    <ClInclude Include="Object\Player.h">
+    <ClInclude Include="Source\Object\Player.h">
       <Filter>Object</Filter>
     </ClInclude>
-    <ClInclude Include="Object\Polygon2D.h">
+    <ClInclude Include="Source\Object\Polygon2D.h">
       <Filter>Object</Filter>
     </ClInclude>
-    <ClInclude Include="Object\Score.h">
+    <ClInclude Include="Source\Object\Score.h">
       <Filter>Object</Filter>
     </ClInclude>
-    <ClInclude Include="Object\Shadow.h">
+    <ClInclude Include="Source\Object\Shadow.h">
       <Filter>Object</Filter>
     </ClInclude>
-    <ClInclude Include="Object\Sky.h">
+    <ClInclude Include="Source\Object\Sky.h">
       <Filter>Object</Filter>
     </ClInclude>
-    <ClInclude Include="Scene\GameScene.h">
+    <ClInclude Include="Source\Scene\GameScene.h">
       <Filter>Scene</Filter>
     </ClInclude>
-    <ClInclude Include="Scene\ResultScene.h">
+    <ClInclude Include="Source\Scene\ResultScene.h">
       <Filter>Scene</Filter>
     </ClInclude>
-    <ClInclude Include="Scene\TitleScene.h">
+    <ClInclude Include="Source\Scene\TitleScene.h">
       <Filter>Scene</Filter>
     </ClInclude>
-    <ClInclude Include="imgui-master\imgui-master\imconfig.h">
-      <Filter>imgui</Filter>
+    <ClInclude Include="Source\main.h">
+      <Filter>Source</Filter>
     </ClInclude>
-    <ClInclude Include="imgui-master\imgui-master\imgui.h">
-      <Filter>imgui</Filter>
+    <ClInclude Include="ThirdParty\imgui\imconfig.h">
+      <Filter>ThirdParty\imgui</Filter>
     </ClInclude>
-    <ClInclude Include="imgui-master\imgui-master\imgui_internal.h">
-      <Filter>imgui</Filter>
+    <ClInclude Include="ThirdParty\imgui\imgui.h">
+      <Filter>ThirdParty\imgui</Filter>
     </ClInclude>
-    <ClInclude Include="imgui-master\imgui-master\imstb_rectpack.h">
-      <Filter>imgui</Filter>
+    <ClInclude Include="ThirdParty\imgui\imgui_internal.h">
+      <Filter>ThirdParty\imgui</Filter>
     </ClInclude>
-    <ClInclude Include="imgui-master\imgui-master\imstb_textedit.h">
-      <Filter>imgui</Filter>
+    <ClInclude Include="ThirdParty\imgui\imstb_rectpack.h">
+      <Filter>ThirdParty\imgui</Filter>
     </ClInclude>
-    <ClInclude Include="imgui-master\imgui-master\imstb_truetype.h">
-      <Filter>imgui</Filter>
+    <ClInclude Include="ThirdParty\imgui\imstb_textedit.h">
+      <Filter>ThirdParty\imgui</Filter>
     </ClInclude>
-    <ClInclude Include="imgui-master\imgui-master\backends\imgui_impl_dx11.h">
-      <Filter>imgui\backends</Filter>
+    <ClInclude Include="ThirdParty\imgui\imstb_truetype.h">
+      <Filter>ThirdParty\imgui</Filter>
     </ClInclude>
-    <ClInclude Include="imgui-master\imgui-master\backends\imgui_impl_win32.h">
-      <Filter>imgui\backends</Filter>
+    <ClInclude Include="ThirdParty\imgui\backends\imgui_impl_dx11.h">
+      <Filter>ThirdParty\imgui\backends</Filter>
     </ClInclude>
-    <ClInclude Include="main.h" />
-    <ClInclude Include="Frame\Scene.h">
-      <Filter>Scene</Filter>
-    </ClInclude>
-    <ClInclude Include="Frame\Component.h">
-      <Filter>Component</Filter>
-    </ClInclude>
-    <ClInclude Include="Frame\GameObject.h">
-      <Filter>Object</Filter>
-    </ClInclude>
-    <ClInclude Include="Frame\Chart.h">
-      <Filter>Frame</Filter>
-    </ClInclude>
-    <ClInclude Include="Frame\Conductor.h">
-      <Filter>Frame</Filter>
+    <ClInclude Include="ThirdParty\imgui\backends\imgui_impl_win32.h">
+      <Filter>ThirdParty\imgui\backends</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <FxCompile Include="shader\common.hlsl">
-      <Filter>シェーダーファイル</Filter>
-    </FxCompile>
-    <FxCompile Include="shader\unlitTexturePS.hlsl">
-      <Filter>シェーダーファイル</Filter>
-    </FxCompile>
-    <FxCompile Include="shader\unlitTextureVS.hlsl">
-      <Filter>シェーダーファイル</Filter>
+      <Filter>shader</Filter>
     </FxCompile>
     <FxCompile Include="shader\fieldPS.hlsl">
-      <Filter>シェーダーファイル</Filter>
+      <Filter>shader</Filter>
     </FxCompile>
     <FxCompile Include="shader\fieldVS.hlsl">
-      <Filter>シェーダーファイル</Filter>
+      <Filter>shader</Filter>
     </FxCompile>
     <FxCompile Include="shader\SkinVS.hlsl">
-      <Filter>シェーダーファイル</Filter>
+      <Filter>shader</Filter>
+    </FxCompile>
+    <FxCompile Include="shader\unlitTexturePS.hlsl">
+      <Filter>shader</Filter>
+    </FxCompile>
+    <FxCompile Include="shader\unlitTextureVS.hlsl">
+      <Filter>shader</Filter>
     </FxCompile>
     <FxCompile Include="shader\WavePS.hlsl">
-      <Filter>シェーダーファイル</Filter>
+      <Filter>shader</Filter>
     </FxCompile>
     <FxCompile Include="shader\WaveVS.hlsl">
-      <Filter>シェーダーファイル</Filter>
+      <Filter>shader</Filter>
     </FxCompile>
   </ItemGroup>
 </Project>
