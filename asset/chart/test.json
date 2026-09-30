@@ -10,7 +10,31 @@
     {
       "lane": 1,
       "length": 0,
+      "tick": 0,
+      "type": 0
+    },
+    {
+      "lane": 2,
+      "length": 0,
+      "tick": 360,
+      "type": 0
+    },
+    {
+      "lane": 1,
+      "length": 0,
       "tick": 480,
+      "type": 0
+    },
+    {
+      "lane": 1,
+      "length": 0,
+      "tick": 840,
+      "type": 0
+    },
+    {
+      "lane": 0,
+      "length": 0,
+      "tick": 840,
       "type": 0
     },
     {
@@ -23,6 +47,12 @@
       "lane": 3,
       "length": 0,
       "tick": 1440,
+      "type": 0
+    },
+    {
+      "lane": 2,
+      "length": 0,
+      "tick": 1560,
       "type": 0
     },
     {
@@ -198,7 +228,7 @@
   "resolution": 480,
   "tempos": [
     {
-      "bpm": 120.0,
+      "bpm": 142.0,
       "tick": 0
     }
   ],

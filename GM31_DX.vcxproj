@@ -77,7 +77,7 @@
       <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
-      <AdditionalIncludeDirectories>$(ProjectDir)Source;$(ProjectDir)Source\Core;$(ProjectDir)Source\Rhythm;$(ProjectDir)Source\Component;$(ProjectDir)Source\Object;$(ProjectDir)Source\Scene;$(ProjectDir)ThirdParty;$(ProjectDir)ThirdParty\imgui;$(ProjectDir)ThirdParty\assimp\include;$(ProjectDir)ThirdParty\DirectXTex;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)Source;$(ProjectDir)Source\Core;$(ProjectDir)Source\Rhythm;$(ProjectDir)Source\Editor;$(ProjectDir)Source\Component;$(ProjectDir)Source\Object;$(ProjectDir)Source\Scene;$(ProjectDir)ThirdParty;$(ProjectDir)ThirdParty\imgui;$(ProjectDir)ThirdParty\assimp\include;$(ProjectDir)ThirdParty\DirectXTex;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
       <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
@@ -100,7 +100,7 @@
       <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
-      <AdditionalIncludeDirectories>$(ProjectDir)Source;$(ProjectDir)Source\Core;$(ProjectDir)Source\Rhythm;$(ProjectDir)Source\Component;$(ProjectDir)Source\Object;$(ProjectDir)Source\Scene;$(ProjectDir)ThirdParty;$(ProjectDir)ThirdParty\imgui;$(ProjectDir)ThirdParty\assimp\include;$(ProjectDir)ThirdParty\DirectXTex;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)Source;$(ProjectDir)Source\Core;$(ProjectDir)Source\Rhythm;$(ProjectDir)Source\Editor;$(ProjectDir)Source\Component;$(ProjectDir)Source\Object;$(ProjectDir)Source\Scene;$(ProjectDir)ThirdParty;$(ProjectDir)ThirdParty\imgui;$(ProjectDir)ThirdParty\assimp\include;$(ProjectDir)ThirdParty\DirectXTex;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
       <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
@@ -121,7 +121,7 @@
       <PreprocessorDefinitions>_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
-      <AdditionalIncludeDirectories>$(ProjectDir)Source;$(ProjectDir)Source\Core;$(ProjectDir)Source\Rhythm;$(ProjectDir)Source\Component;$(ProjectDir)Source\Object;$(ProjectDir)Source\Scene;$(ProjectDir)ThirdParty;$(ProjectDir)ThirdParty\imgui;$(ProjectDir)ThirdParty\assimp\include;$(ProjectDir)ThirdParty\DirectXTex;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)Source;$(ProjectDir)Source\Core;$(ProjectDir)Source\Rhythm;$(ProjectDir)Source\Editor;$(ProjectDir)Source\Component;$(ProjectDir)Source\Object;$(ProjectDir)Source\Scene;$(ProjectDir)ThirdParty;$(ProjectDir)ThirdParty\imgui;$(ProjectDir)ThirdParty\assimp\include;$(ProjectDir)ThirdParty\DirectXTex;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
       <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
@@ -145,7 +145,7 @@
       <PreprocessorDefinitions>NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
-      <AdditionalIncludeDirectories>$(ProjectDir)Source;$(ProjectDir)Source\Core;$(ProjectDir)Source\Rhythm;$(ProjectDir)Source\Component;$(ProjectDir)Source\Object;$(ProjectDir)Source\Scene;$(ProjectDir)ThirdParty;$(ProjectDir)ThirdParty\imgui;$(ProjectDir)ThirdParty\assimp\include;$(ProjectDir)ThirdParty\DirectXTex;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)Source;$(ProjectDir)Source\Core;$(ProjectDir)Source\Rhythm;$(ProjectDir)Source\Editor;$(ProjectDir)Source\Component;$(ProjectDir)Source\Object;$(ProjectDir)Source\Scene;$(ProjectDir)ThirdParty;$(ProjectDir)ThirdParty\imgui;$(ProjectDir)ThirdParty\assimp\include;$(ProjectDir)ThirdParty\DirectXTex;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
       <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
@@ -184,6 +184,8 @@
     <ClCompile Include="Source\Scene\ResultScene.cpp" />
     <ClCompile Include="Source\Scene\TitleScene.cpp" />
     <ClCompile Include="Source\main.cpp" />
+    <ClCompile Include="Source\Editor\ChartEditor.cpp" />
+    <ClCompile Include="Source\Scene\EditorScene.cpp" />
     <ClCompile Include="ThirdParty\imgui\imgui.cpp" />
     <ClCompile Include="ThirdParty\imgui\imgui_demo.cpp" />
     <ClCompile Include="ThirdParty\imgui\imgui_draw.cpp" />
@@ -221,6 +223,8 @@
     <ClInclude Include="Source\Scene\ResultScene.h" />
     <ClInclude Include="Source\Scene\TitleScene.h" />
     <ClInclude Include="Source\main.h" />
+    <ClInclude Include="Source\Editor\ChartEditor.h" />
+    <ClInclude Include="Source\Scene\EditorScene.h" />
     <ClInclude Include="ThirdParty\imgui\imconfig.h" />
     <ClInclude Include="ThirdParty\imgui\imgui.h" />
     <ClInclude Include="ThirdParty\imgui\imgui_internal.h" />

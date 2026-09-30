@@ -16,6 +16,7 @@
 #include "Polygon2D.h"
 #include "TitleScene.h"
 #include "GameScene.h"
+#include "EditorScene.h"
 //==============================================================================
 //マクロ宣言
 //==============================================================================
@@ -68,6 +69,12 @@ void TitleScene::Update()
 	if (Input::GetKeyTrigger(VK_RETURN) || Input::GetMouseTrigger(Input::MOUSE_LEFT))
 	{
 		Manager::ChangeScene<GameScene>();
+	}
+
+	// F2：譜面エディタへ
+	if (Input::GetKeyTrigger(VK_F2))
+	{
+		Manager::ChangeScene<EditorScene>();
 	}
 
 }

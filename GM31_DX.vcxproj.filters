@@ -1,6 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
+    <Filter Include="Editor">
+      <UniqueIdentifier>{c1ed5d60-6168-55d3-8a7a-ec35c5006a16}</UniqueIdentifier>
+    </Filter>
     <Filter Include="Component">
       <UniqueIdentifier>{288c2c12-7228-50ef-aebb-43bd18e07bc3}</UniqueIdentifier>
     </Filter>
@@ -33,6 +36,12 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Source\Scene\EditorScene.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Editor\ChartEditor.cpp">
+      <Filter>Editor</Filter>
+    </ClCompile>
     <ClCompile Include="Source\Rhythm\Chart.cpp">
       <Filter>Rhythm</Filter>
     </ClCompile>
@@ -128,6 +137,12 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Source\Scene\EditorScene.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Editor\ChartEditor.h">
+      <Filter>Editor</Filter>
+    </ClInclude>
     <ClInclude Include="Source\Rhythm\Chart.h">
       <Filter>Rhythm</Filter>
     </ClInclude>
